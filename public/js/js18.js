@@ -1,0 +1,1 @@
+console.warn('Advanced Functions in JavaScript')
