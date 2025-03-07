@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJS</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <main>
+        <% 
+            const topics=[ "Introduction to JavaScript" , "Basics of JavaScript" , "Revision of JavaScript"
+            , "Functions in JavaScript" , "Advanced Functions in JavaScript" , "Introduction to Arrays and Objects"
+            , "JavaScript Practice Session" , "JavaScript Practice Session" , "JavaScript Practice Session"
+            , "Callback and Closure in JavaScript" , "Advanced HOIFs, Callbacks, and Closures Questions"
+            , "Introduction to DS (Data Structures)" ]; 
+            const specialClasses=["", "" , "" , "" , "" , "" , "practice"
+            , "practice" , "practice" , "" , "advanced" , "ds" ]; 
+        %>
+        <div class="content-wrapper">
+            <% topics.forEach((topic, index)=> { %>
+                <div class="topic <%= specialClasses[index] %>">
+                    <a href="/html/js<%= index + 14 %>.html">
+                        <%= topic %>
+                    </a>
+                </div>
+                <% }); %>
+        </div>
+    </main>
+
+</body>
+
+</html>
