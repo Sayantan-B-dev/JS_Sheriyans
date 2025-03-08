@@ -1,18 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js20</title>
+    <link rel="stylesheet" href="/css/alljs.css">
     <style>
-        h1 {
-            width: 100%;
-            text-align: center;
+        main {
+            flex-direction: column;
         }
     </style>
 </head>
+
 <body>
-    <h1>Currently viewing "JavaScript Practice Session", use dev tools for the js</h1>
+    <h1>Currently viewing "Introduction to Arrays and Objects", <br>
+        open Console by Rightclick>inspect>Console or F12</h1>
+    <main>
+        <div>
+            <h2>Arrays</h2>
+            <div>
+                <h4>What is Array:</h4>
+                <p>
+                    An array is a data structure that stores multiple values in a single variable.
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+                        target="_blank">Learn more</a>
+                </p>
+            </div>
+            <div>
+                <h4>Why use Array:</h4>
+                <p>
+                    Arrays allow storing and managing multiple values efficiently, reducing the need for separate
+                    variables.
+                    <a href="https://www.w3schools.com/js/js_arrays.asp" target="_blank">Read more</a>
+                </p>
+            </div>
+            <div>
+                <h4>Where to use Array:</h4>
+                <p>
+                    Arrays are used in data storage, iteration, and manipulation, such as storing user lists or handling
+                    game data.
+                </p>
+            </div>
+            <div>
+                <h4>How to create and access members of an Array:</h4>
+                <p>
+                    <code>let arr = [1, 2, 3]; console.log(arr[0]); // Output: 1</code>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors"
+                        target="_blank">More on Accessing Arrays</a>
+                </p>
+            </div>
+            <div>
+                <h4>When to use new Array();</h4>
+                <p>
+                    Use <code>new Array()</code> for dynamic array creation or predefined size initialization.
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array"
+                        target="_blank">More details</a>
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h2>Objects</h2>
+            <div>
+                <h4>What is object:</h4>
+                <p>
+                    Objects are collections of key-value pairs used to store structured data.
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object"
+                        target="_blank">Learn more</a>
+                </p>
+            </div>
+            <div>
+                <h4>How to write Object:</h4>
+                <p>
+                    <code>let person = { name: "Alice", age: 25 };</code>
+                    <a href="https://www.w3schools.com/js/js_objects.asp" target="_blank">Object Syntax</a>
+                </p>
+            </div>
+            <div>
+                <h4>Why and when to use Object:</h4>
+                <p>
+                    Objects are used for storing structured data like user profiles, configurations, or API responses.
+                </p>
+            </div>
+            <div>
+                <h4>How to access Object:</h4>
+                <p>
+                    <code>console.log(person.name); // Output: Alice</code>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects"
+                        target="_blank">Guide to Objects</a>
+                </p>
+            </div>
+            <div>
+                <h4>When to use new Object():</h4>
+                <p>
+                    Use <code>new Object()</code> for dynamic object creation when keys and values are unknown at
+                    initialization.
+                </p>
+            </div>
+            <div>
+                <h4>Nested object:</h4>
+                <p>
+                    <code>let user = { profile: { name: "John", age: 30 } };</code>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors"
+                        target="_blank">Nested Objects</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
     <script src="/js/js20.js"></script>
 </body>
+
 </html>

@@ -5,17 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js14</title>
     <link rel="stylesheet" href="/css/alljs.css">
+    <style>
+        main{
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
     <h1>Currently viewing "Introduction to JavaScript", <br>
         open Console by Rightclick>inspect>Console or F12</h1>
-    <ul type="none">
-        <li>console.(log,warn,error)</li>
-        <li>var,let,const</li>
-        <li>variable declaration & initialize</li>
-        <li>arithmetic operators</li>
-        <li>alert,confirm,prompt(Try it in your console)</li>
-    </ul>
+    <main>
+        <div class="console-methods">
+            <h3>Console Methods</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/log" target="_blank">console.log</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/warn" target="_blank">console.warn</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/error" target="_blank">console.error</a></li>
+            </ul>
+        </div>
+        
+        <div class="variables">
+            <h3>Variables</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var" target="_blank">var</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let" target="_blank">let</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const" target="_blank">const</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#declaring_variables" target="_blank">Variable Declaration</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#variable_initialization" target="_blank">Variable Initialization</a></li>
+            </ul>
+        </div>
+        
+        <div class="operators">
+            <h3>Operators</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators" target="_blank">Arithmetic Operators</a></li>
+            </ul>
+        </div>
+        
+        <div class="browser-methods">
+            <h3>Browser Methods</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert" target="_blank">alert</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm" target="_blank">confirm</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt" target="_blank">prompt</a></li>
+            </ul>
+        </div>
+        
+    </main>
     <script src="/js/js14.js"></script>
 </body>
 </html>

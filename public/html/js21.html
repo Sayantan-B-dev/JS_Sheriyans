@@ -1,18 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js21</title>
+    <link rel="stylesheet" href="/css/alljs.css">
     <style>
-        h1 {
-            width: 100%;
-            text-align: center;
+        main {
+            flex-direction: column;
         }
     </style>
 </head>
+
 <body>
-    <h1>Currently viewing "JavaScript Practice Session", use dev tools for the js</h1>
+    <h1>Currently viewing "JavaScript Practice Session1", <br>
+        open Console by Rightclick>inspect>Console or F12</h1>
+    <main>
+        <div>
+            <h2>Problem1:</h2>
+            <p>1. Log "Hello, JavaScript!" to the console in 3 different ways.</p>
+            <h3>Solution:</h3>
+            <pre><code>
+                console.log("Hello, JavaScript!");
+                console.info("Hello, JavaScript!");
+                console.warn("Hello, JavaScript!");
+                console.error("Hello, JavaScript!");
+                console.table([{ Message: "Hello, JavaScript!" }]);
+                </code></pre>
+
+        </div>
+        <div>
+            <h2>Problem2:</h2>
+            <p>2. Perform 35 * 2 - (10 / 2) + 7 and log the result.</p>
+            <h3>Solution:</h3>
+            <pre><code>console.log(35 * 2 - (10 / 2) + 7);
+            </code></pre>
+        </div>
+        <div>
+            <h2>Problem3:</h2>
+            <p>3. Log the data type of "123", 123, true, and null using typeof.</p>
+            <h3>Solution:</h3>
+            <pre><code>
+                console.log(typeof "123");  
+                console.log(typeof 123);  
+                console.log(typeof true);  
+                console.log(typeof null);
+                </code></pre>
+        </div>
+        <div>
+            <h2>Problem4:</h2>
+            <p>4. Write a program that swaps the values of two variables.</p>
+            <h3>Solution:</h3>
+            <pre><code>
+                // Method 1: Using a temporary variable
+                let a = 5, b = 10;
+                let temp = a;
+                a = b;
+                b = temp;
+                console.log(a, b);
+                
+                // Method 2: Using destructuring assignment
+                let x = 5, y = 10;
+                [x, y] = [y, x];
+                console.log(x, y);
+                
+                // Method 3: Using arithmetic operations
+                let p = 5, q = 10;
+                p = p + q;
+                q = p - q;
+                p = p - q;
+                console.log(p, q);
+                </code></pre>
+        </div>
+        <div>
+            <h2>Problem5:</h2>
+            <p>5. Use console.group() to organize logs into a group.</p>
+            <h3>Solution:</h3>
+            <pre><code>
+                console.group("User Info");
+                console.log("Name: John Doe");
+                console.log("Age: 25");
+                console.log("Location: New York");
+                console.groupEnd();
+                </code></pre>
+        </div>
+        <div>
+            <h2>Problem6:</h2>
+            <p>6. Declare a const object, modify its properties, and log the updated object.</p>
+            <h3>Solution:</h3>
+            <pre><code>
+                const person = { name: "Alice", age: 30, city: "Paris" };
+                person.age = 31;
+                person.city = "London";
+                console.log(person); //{ name: "Alice", age: 31, city: "London" }
+                </code></pre>
+        </div>
+        <div>
+            <h2>Problem7:</h2>
+            <p>7. Convert "50" (string) into a number using all different methods.</p>
+            <h3>Solution:</h3>
+            <pre><code>
+                console.log(Number("50"));  
+                console.log(parseInt("50"));  
+                console.log(parseFloat("50"));  
+                console.log(+"50");  
+                console.log("50" * 1);  
+                console.log("50" / 1);  
+                console.log("50" - 0);  
+                console.log("50" | 0);  
+                </code></pre>
+        </div>
+        <div>
+            <h2>Problem8:</h2>
+            <p>8. Check if "JavaScript" contains "Script" without using .includes().</p>
+            <h3>Solution:</h3>
+            <pre><code>
+                console.log("JavaScript".indexOf("Script") !== -1); //true
+                console.log("JavaScript".search("Script") !== -1); //true
+                console.log(/Script/.test("JavaScript")); //true
+                </code></pre>
+        </div>
+        <div>
+            <h2>Problem9:</h2>
+            <p>9. Create an array of 5 numbers and log the sum using .reduce().</p>
+            <h3>Solution:</h3>
+            <pre><code>
+                const numbers = [10, 20, 30, 40, 50];  
+                const sum = numbers.reduce((acc, num) => acc + num, 0);  
+                console.log(sum); //150
+                </code></pre>
+        </div>
+        <div>
+            <h2>Problem10:</h2>
+            <p>10. Explain the difference between undefined, null, and NaN with examples.</p>
+            <h3>Solution:</h3>
+            <div>
+                <table border="1">
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td><b>undefined</b></td>
+                        <td>A variable declared but not assigned a value.</td>
+                        <td><code>let x; console.log(x); // undefined</code></td>
+                    </tr>
+                    <tr>
+                        <td><b>null</b></td>
+                        <td>An intentional absence of a value.</td>
+                        <td><code>let y = null; console.log(y); // null</code></td>
+                    </tr>
+                    <tr>
+                        <td><b>NaN</b></td>
+                        <td>"Not-a-Number", occurs in invalid math ops.</td>
+                        <td><code>console.log("abc" / 2); // NaN</code></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
     <script src="/js/js21.js"></script>
 </body>
+
 </html>
