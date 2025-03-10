@@ -75,7 +75,9 @@
             </div>
             <div>
                 <h2>Why not copy like let arr = arr2?</h2>
-                <p>In JavaScript, doing <code>let arr = arr2;</code> does not create a new array. Instead, it assigns a reference to the same array in memory. Any changes made to <code>arr</code> will also affect <code>arr2</code>, since they both point to the same object.</p>
+                <p>In JavaScript, doing <code>let arr = arr2;</code> does not create a new array. Instead, it assigns a
+                    reference to the same array in memory. Any changes made to <code>arr</code> will also affect
+                    <code>arr2</code>, since they both point to the same object.</p>
                 <h3>Example:</h3>
                 <pre><code>
                     let arr1 = [1, 2, 3];
@@ -86,9 +88,10 @@
                     console.log(arr1); // Output: [1, 2, 3, 4]
                     console.log(arr2); // Output: [1, 2, 3, 4]
                 </code></pre>
-            
+
                 <h3>Correct Way to Copy an Array:</h3>
-                <p>To create a new independent copy, use <code>slice()</code>, <code>spread operator</code>, or <code>Array.from()</code>.</p>
+                <p>To create a new independent copy, use <code>slice()</code>, <code>spread operator</code>, or
+                    <code>Array.from()</code>.</p>
                 <pre><code>
                     // Using slice()
                     let arr3 = arr1.slice();
@@ -100,9 +103,10 @@
                     let arr5 = Array.from(arr1);
                 </code></pre>
             </div>
-            
+
             <div>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">forEach</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                        target="_blank">forEach</a></li>
                 <p><b>Definition:</b> The <code>forEach()</code> method executes a provided function once for each array
                     element. It does not return a new array but is useful for performing actions on elements.</p>
                 <p><b>Use Case:</b> When you need to iterate over an array but don't need to transform it or return a
@@ -113,7 +117,8 @@
                     // Output: 2, 4, 6, 8, 10
                 </code></pre>
 
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank">map</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+                        target="_blank">map</a></li>
                 <p><b>Definition:</b> The <code>map()</code> method creates a new array by applying a function to each
                     element of the original array. It is used for transforming array data.</p>
                 <p><b>Use Case:</b> When you need to modify each element and return a new array without altering the
@@ -125,7 +130,8 @@
                     // Output: [1, 4, 9, 16, 25]
                 </code></pre>
 
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank">filter</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+                        target="_blank">filter</a></li>
                 <p><b>Definition:</b> The <code>filter()</code> method creates a new array containing only the elements
                     that meet a specified condition.</p>
                 <p><b>Use Case:</b> When you need to extract specific elements from an array based on a condition.</p>
@@ -136,7 +142,8 @@
                     // Output: [2, 4]
                 </code></pre>
 
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce" target="_blank">reduce</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"
+                        target="_blank">reduce</a></li>
                 <p><b>Definition:</b> The <code>reduce()</code> method applies a function to an array, reducing it to a
                     single value (such as a sum or product).</p>
                 <p><b>Use Case:</b> When you need to compute a single value from an array, such as summing elements.</p>
@@ -147,9 +154,12 @@
                     // Output: 15
                 </code></pre>
 
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set" target="_blank">set()</a></li>
-                <p><b>Definition:</b> The <code>Set</code> object in JavaScript is a collection of unique values. It allows only distinct elements, meaning duplicate values are automatically removed.</p>
-                <p><b>Use Case:</b> Use <code>Set</code> when you need to store unique values, remove duplicates from an array, or efficiently check for the existence of a value.</p>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set"
+                        target="_blank">set()</a></li>
+                <p><b>Definition:</b> The <code>Set</code> object in JavaScript is a collection of unique values. It
+                    allows only distinct elements, meaning duplicate values are automatically removed.</p>
+                <p><b>Use Case:</b> Use <code>Set</code> when you need to store unique values, remove duplicates from an
+                    array, or efficiently check for the existence of a value.</p>
                 <pre><code>
                     // Creating a Set
                     let mySet = new Set([1, 2, 3, 3, 4, 4, 5]); 
@@ -172,7 +182,30 @@
                     let uniqueArray = [...mySet];
                     console.log(uniqueArray); // Output: [1, 3, 4, 5, 6]
                 </code></pre>
-                
+
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"
+                        target="_blank">sort()</a></li>
+                <p><b>Definition:</b> The <code>sort()</code> method sorts the elements of an array in place and returns
+                    the sorted array. By default, it sorts elements as strings in ascending order.</p>
+                <p><b>Use Case:</b> Used for sorting arrays of numbers, strings, or objects based on specific criteria.
+                </p>
+                <pre><code>
+                    // Sorting an array of strings
+                    let fruits = ["Banana", "Apple", "Mango"];
+                    fruits.sort();
+                    console.log(fruits); // ["Apple", "Banana", "Mango"]
+
+                    // Sorting an array of numbers (ascending order)
+                    let numbers = [4, 2, 10, 1];
+                    numbers.sort((a, b) => a - b);
+                    console.log(numbers); // [1, 2, 4, 10]
+
+                    // Sorting an array of objects by a property
+                    let people = [{ name: "Alice", age: 25 }, { name: "Bob", age: 20 }];
+                    people.sort((a, b) => a.age - b.age);
+                    console.log(people); // [{ name: "Bob", age: 20 }, { name: "Alice", age: 25 }]
+                </code></pre>
+
             </div>
         </main>
         <main id="m2">
@@ -295,6 +328,14 @@
                         }
                     }
                     console.log(mostFrequent);
+
+
+
+                    ////////////////////////
+                    let arr=[1,3,24,5,3,3,2,24,5,2,62,62,62,62,223,3,34,4,21,1,12,34,4,345,2]
+                    let obj={}
+                    arr.forEach(val=>obj[val]===undefined ? obj[val]=1 : obj[val]++)
+                    console.log(obj)
                 </code></pre>
             </div>
         </main>
